@@ -13,10 +13,10 @@ else
     echo "not on docker desktop, standard storage class exists, skipping."
 fi
 
-docker image tag hugo-page-tikautz ghcr.io/g-tikautz/hugo-page-tikautz:latest
-docker push ghcr.io/g-tikautz/hugo-page-tikautz:latest
-docker image tag hugo-backend-tikautz ghcr.io/g-tikautz/hugo-backend-tikautz:latest
-docker push ghcr.io/g-tikautz/hugo-backend-tikautz:latest
+docker image tag hugo-page-woegerbauer ghcr.io/d-woegerbauer/hugo-page-woegerbauer:latest
+docker push ghcr.io/d-woegerbauer/hugo-page-woegerbauer:latest
+docker image tag hugo-backend-woegerbauer ghcr.io/d-woegerbauer/hugo-backend-woegerbauer:latest
+docker push ghcr.io/d-woegerbauer/hugo-backend-woegerbauer:latest
 kubectl delete -f appsrv.yaml
 kubectl delete -f nginx.yaml
 kubectl apply -f namespace.yaml

@@ -11,25 +11,24 @@ spec:
     - host: student.cloud.htl-leonding.ac.at
       http:
         paths:
-          - path: /g.tikautz
+          - path: /d.woegerbauer
             pathType: Prefix
             backend:
               service:
                 name: nginx
                 port:
                   number: 80
-          - path: /g.tikautz/(.*)$
+          - path: /d.woegerbauer/(.*)$
             pathType: Prefix
             backend:
               service:
                 name: nginx
                 port:
                   number: 80
-          - path: /g.tikautz/api/(.*)$
+          - path: /d.woegerbauer/api/(.*)$
             pathType: Prefix
             backend:
               service:
                 name: appsrv
                 port:
                   number: 8080
-                  

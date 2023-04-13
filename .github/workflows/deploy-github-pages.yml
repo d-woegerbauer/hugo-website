@@ -12,9 +12,9 @@ jobs:
       - uses: actions/checkout@v3
       - name: Install hugo and build
         run: |
-            sudo apt install hugo
-            cd homepage
-            hugo
+          sudo apt install hugo
+          cd homepage
+          hugo
       - name: Deploy to external repository
         uses: cpina/github-action-push-to-another-repository@main
         env:
@@ -23,7 +23,6 @@ jobs:
         with:
           # GitHub Action output files
           source-directory: homepage/public
-          destination-github-username: g-tikautz
-          destination-repository-name: g-tikautz.github.io
-          user-email: gregort@gmx.at
-          
+          destination-github-username: d-woegerbauer
+          destination-repository-name: d-woegerbauer.github.io
+          user-email: david.woegerb@gmail.com

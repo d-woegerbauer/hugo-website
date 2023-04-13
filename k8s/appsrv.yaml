@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: appsrv
-          image: ghcr.io/g-tikautz/hugo-backend-tikautz:latest
+          image: ghcr.io/d-woegerbauer/hugo-backend-woegerbauer:latest
           # remove this when stable. Currently we do not take care of version numbers
           imagePullPolicy: Always
           ports:
@@ -38,7 +38,7 @@ spec:
               port: 8080
             timeoutSeconds: 5
             initialDelaySeconds: 60
-            periodSeconds: 120    
+            periodSeconds: 120
 ---
 apiVersion: v1
 kind: Service

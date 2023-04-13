@@ -2098,7 +2098,7 @@
         /* harmony import */ var _model_store__WEBPACK_IMPORTED_MODULE_0__ =
           __webpack_require__(/*! ./model/store */ "./src/model/store.ts");
 
-        const USER_URL = "./g.tikautz/api/api/user";
+        const USER_URL = "./d.woegerbauer/api/api/user";
         class UserService {
           async fetchAll() {
             const response = await fetch(USER_URL);
