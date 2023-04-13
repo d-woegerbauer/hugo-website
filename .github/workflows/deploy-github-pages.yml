@@ -26,3 +26,4 @@ jobs:
           destination-github-username: d-woegerbauer
           destination-repository-name: d-woegerbauer.github.io
           user-email: david.woegerb@gmail.com
+          target-branch: master
